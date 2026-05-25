@@ -1,0 +1,15 @@
+from typing import Dict, List
+
+def remove_keys(m: Dict[str, int], keys: List[str]) -> Dict[str, int]:
+    for i in keys:
+        if i in m:
+            del m[i]
+
+    return m
+
+
+
+
+# do not modify below this line
+print(remove_keys({"a": 1, "b": 2, "c": 3}, ["a", "c"]))
+print(remove_keys({"a": 1, "b": 2, "c": 3}, ["d"]))
